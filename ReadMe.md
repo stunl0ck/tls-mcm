@@ -1,3 +1,7 @@
+
+
+
+
 <img src="docs/icon.png" alt="Mod Configuration Manager (MCM)" width="96" align="left" />
 
 ### The Last Spell MCM
@@ -10,7 +14,7 @@ Mod Configuration Manager
 
 ---
 
-<video src="docs/mcm-demo.mp4" width="720" controls></video>
+<video src="https://github.com/user-attachments/assets/505f2ccd-b78c-49e7-a840-728789df78c7" width="720" controls></video>
 
 
 ## Summary
