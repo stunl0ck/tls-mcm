@@ -1,0 +1,24 @@
+# Build output
+/bin/
+/obj/
+
+/libs/
+
+# IDE-specific
+.vs/
+.idea/
+*.user
+*.suo
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+
+# Logs
+*.log
+
+# OS
+Thumbs.db
+.DS_Store
