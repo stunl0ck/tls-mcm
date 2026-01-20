@@ -15,6 +15,8 @@ namespace Stunl0ck.ModConfigManager
         public static ManualLogSource Log { get; private set; }
         private static bool s_initialized;
 
+        internal const bool EnableModsButtonFix = true;
+
         private void Awake()
         {
             Log = Logger;
@@ -28,7 +30,10 @@ namespace Stunl0ck.ModConfigManager
 
             Harmony.CreateAndPatchAll(typeof(LocalizationHooks));
             Harmony.CreateAndPatchAll(typeof(ModsViewHooks));
+            if (EnableModsButtonFix)
+                Harmony.CreateAndPatchAll(typeof(ModsOpenButtonHooks));
 
+            Log.LogInfo($"[MCM] Mods button fix enabled: {EnableModsButtonFix}");
             Log.LogInfo("[MCM] Plugin initialized.");
         }
     }
